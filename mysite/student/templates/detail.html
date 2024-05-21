@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% block title %} Student Details {% endblock %}
+{% block content %}
+<h1>
+    <a href="/">Institute Student Portal</a>
+</h1>
+<h2>Student Details</h2>
+<ul>
+    <li>Student Name: {{student.first_name}} {{student.last_name}}</li>
+    <li>Enrollment Id: {{student.student_id}}</li>
+    <li>Father's Name: {{student.fathers_name}}</li>
+    <li>Mother's Name: {{student.mothers_name}}</li>
+    <li>Date of Birth: {{student.dob}}</li>
+    <li>STD: {{student.std}}</li>
+</ul>
+{% endblock %}

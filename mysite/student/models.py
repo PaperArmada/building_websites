@@ -22,4 +22,4 @@ class StudentDetail(models.Model):
         verbose_name_plural = "Student Details"
 
     def get_absolute_url(self):
-        return reverse('student:view@StudentDetails', args=[self.student_id])
+        return reverse('student:viewStudentDetails', args=[self.student_id])

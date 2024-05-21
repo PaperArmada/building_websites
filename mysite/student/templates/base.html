@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Institute Student Portal</title>
+        <!-- Latest compile and minified CSS -->
+        <link 
+            rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            crossorigin="anonymous">
+    </head>
+
+    <body class="loader">
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="blog_posts">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {# SCRIPTS #}
+        <script type="text/javascript" src="{% static 'js/blog.js' %}"></script>
+    </body>
+</html>
